@@ -19,7 +19,7 @@ const RandomCharacterInfo = ({randomCharacter}) => {
 					}
 				</div>
 				<div className={styles["info-random-character__buttons"]}>
-					<Link to={`character/${id}`} className={cn("button", "button_red", "button_short", styles["info-random-character__btn-home-page"])}>
+					<Link to={`/marvel-portal/character/${id}`} className={cn("button", "button_red", "button_short", styles["info-random-character__btn-home-page"])}>
 						<span className="inner">
 							homepage
 						</span>

@@ -50,7 +50,7 @@ const ComicPage = () => {
 								: <ViewComicData data={comicData} />
 					}
 					<div className={styles["comic__info-back-btn"]}>
-						<Link to='/comics' className={styles["comic__info-back-btn-link"]}>Back to all</Link>
+						<Link to='/marvel-portal/comics' className={styles["comic__info-back-btn-link"]}>Back to all</Link>
 					</div>
 				</div>
 			</div>

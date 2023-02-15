@@ -32,20 +32,20 @@ const Header = () => {
 			<div className="header__container">
 				<div className={styles["header__wrapper"]}>
 
-					<NavLink to="/" className={styles["header__logo"]}>
+					<NavLink to="/marvel-portal/" className={styles["header__logo"]}>
 						<span className={styles["header__logo-red-word"]}>Marvel</span> information portal
 					</NavLink>
 
 					<nav className={styles.header__nav} id="main-nav" onClick={(event) => openAndCloseMobileMenu('close', event)}>
-						<NavLink to="/" className={styles["header__nav-link"]}>
+						<NavLink to="/marvel-portal/" className={styles["header__nav-link"]}>
 							Characters
 						</NavLink>
 						<span className={styles["header__nav-sep"]}>/</span>
-						<NavLink to="/comics" className={styles["header__nav-link"]}>
+						<NavLink to="/marvel-portal/comics" className={styles["header__nav-link"]}>
 							Comics
 						</NavLink>
 						<span className={styles["header__nav-sep"]}>/</span>
-						<NavLink to="/favorite/characters" className={styles["header__nav-link"]}>
+						<NavLink to="/marvel-portal/favorite/characters" className={styles["header__nav-link"]}>
 							My Favorite ({Object.keys(state).length})
 						</NavLink>
 						<div className={styles["header__close-mobile-menu"]} onClick={() => openAndCloseMobileMenu('close')}></div>

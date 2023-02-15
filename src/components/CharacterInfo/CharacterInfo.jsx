@@ -12,7 +12,7 @@ const CharacterInfo = ({characterInfo}) => {
 				<img src={image} alt={name} className={styles["character-info__image"]}/>
 				<div className={styles["character-info__heading-and-buttons"]}>
 					<h2 className={styles["character-info__heading"]}>{name}</h2>
-					<Link to={`character/${id}`} className={cn("button", "button_red", "button_short", styles["character-info__btn-home-page"])}>
+					<Link to={`/marvel-portal/character/${id}`} className={cn("button", "button_red", "button_short", styles["character-info__btn-home-page"])}>
 						<span className="inner">
 							homepage
 						</span>
@@ -35,7 +35,7 @@ const CharacterInfo = ({characterInfo}) => {
 					{
 						comics.map((comic, index) => {
 								const id = comic.resourceURI.split('/')[comic.resourceURI.split('/').length - 1];
-								return <Link key={index} to={`comics/${id}`} className={styles["character-info__comics-item"]}>{comic.name}</Link>;
+								return <Link key={index} to={`/marvel-portal/comics/${id}`} className={styles["character-info__comics-item"]}>{comic.name}</Link>;
 							})
 					}
 				</div>

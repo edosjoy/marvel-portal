@@ -7,7 +7,7 @@ const ErrorPage = () => {
 	return (
 		<section className={cn(styles["error"], 'error__container')}>
 			<p>ErrorPage</p>
-			<Link to='/'>to Home Page</Link>
+			<Link to='/marvel-portal'>to Home Page</Link>
 		</section>
 	);
 };

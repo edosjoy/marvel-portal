@@ -8,27 +8,27 @@ import FavoriteComicsPage from "../containers/FavoriteComicsPage/FavoriteComicsP
 
 const RoutesConfig = [
 	{
-		path: '/',
+		path: '/marvel-portal',
 		element: <HomePage />,
 	},
 	{
-		path: 'comics',
+		path: '/marvel-portal/comics',
 		element: <ComicsPage />
 	},
 	{
-		path: 'comics/:id',
+		path: '/marvel-portal/comics/:id',
 		element: <ComicPage />
 	},
 	{
-		path: 'character/:id',
+		path: '/marvel-portal/character/:id',
 		element: <CharacterPage />
 	},
 	{
-		path: 'favorite/characters',
+		path: '/marvel-portal/favorite/characters',
 		element: <FavoriteCharactersPage />
 	},
 	{
-		path: 'favorite/comics',
+		path: '/marvel-portal/favorite/comics',
 		element: <FavoriteComicsPage />
 	},
 	{

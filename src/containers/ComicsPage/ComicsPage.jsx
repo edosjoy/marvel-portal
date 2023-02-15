@@ -74,7 +74,7 @@ export default ComicsPage;
 export const ViewTile = ({id, image, title, price, isFavorite}) => {
 	return (
 			<div className={styles["comics__list-item"]}>
-				<Link to={`/comics/${id}`} className={styles["comics__list-item-link"]}>
+				<Link to={`/marvel-portal/comics/${id}`} className={styles["comics__list-item-link"]}>
 					<img src={image} alt={title} className={styles["comics__list-item-img"]}/>
 					<FavoriteHeart id={id} image={image} title={title} price={price} type='comic' isHeartOn={isFavorite} />
 					<span className={styles["comics__list-item-heading"]}>{title}</span>
