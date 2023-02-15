@@ -1,0 +1,78 @@
+:root {
+
+  /* FONTS */
+  --font-color-black: #000000;
+  --font-color-black-opacity: rgba(0, 0, 0, 0.6);
+  --font-color-white: #ffffff;
+  --font-color-red: #9f0013;
+
+  --font-size-medium: 14px;
+  --font-size-xmedium: 18px;
+  --font-size-large: 22px;
+  --font-size-xlarge: 24px;
+
+  /* BACKGROUND COLORS */
+  --background-color-white: #ffffff;
+  --background-color-gray: #232222;
+
+  /* BUTTONS */
+  --button-color-red: #9f0013;
+  --button-color-gray: #5c5c5c;
+
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-condensed-v25-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('../fonts/roboto-condensed-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-condensed-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-condensed-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-condensed-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-condensed-v25-latin-regular.svg#RobotoCondensed') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-condensed-v25-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('../fonts/roboto-condensed-v25-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-condensed-v25-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-condensed-v25-latin-700.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-condensed-v25-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-condensed-v25-latin-700.svg#RobotoCondensed') format('svg'); /* Legacy iOS */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size-medium);
+  line-height: 16px;
+  color: var(--font-color-black);
+}
+
+[class*='__container'] {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

@@ -1,0 +1,48 @@
+.random-character {
+
+}
+
+.random-character__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.random-character__info {
+  padding: 35px 40px;
+  display: flex;
+  gap: 0 30px;
+}
+
+.random-character__description {
+  position: relative;
+}
+
+.random-character__image {
+  /*max-width: 180px;*/
+  /*max-height: 180px;*/
+}
+
+.random-character__heading {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0 0 13px 0;
+}
+
+.random-character__text {
+
+}
+
+.random-character__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 30px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.random-character__try {
+  height: 100px;
+  background: green;
+}

@@ -1,0 +1,109 @@
+/*
+Стили для всех типов кнопок
+
+.button
+  Общий стиль кнопки
+
+.button_short
+  Модификатор - короткая кнопка
+
+.button_long
+  Модификатор - длинная кнопка
+
+.button_red
+  Модификатор - красная кнопка
+
+.button_gray
+  Модификатор - серая кнопка
+
+У кнопки должно быть обязательно три стиля
+  - общий стиль .button
+  - модификатор, обозначающий цвет кнопки
+  - модификатор, обозначающий длину кнопки
+*/
+
+.button {
+  position: relative;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+}
+
+.button_short {
+  width: 101px;
+}
+
+.button_long {
+  width: 170px;
+}
+
+.button_red {
+  background: #9f0013;
+}
+
+.button_gray {
+  background: #5c5c5c;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  width: 91px;
+  height: 10px;
+  position: absolute;
+}
+
+.button_red::before,
+.button_red::after {
+  background: #9f0013;
+}
+
+.button_gray::before,
+.button_gray::after {
+  background: #5c5c5c;
+}
+
+.button::before {
+  top: -10px;
+  right: 0;
+}
+
+.button::after {
+  bottom: -10px;
+  left: 0;
+}
+
+.button .inner::before,
+.button .inner::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+
+.button_red .inner::before,
+.button_red .inner::after {
+  border-color: #9f0013 transparent;
+}
+
+.button_gray .inner::before,
+.button_gray .inner::after {
+  border-color: #5c5c5c transparent;
+}
+
+.button .inner::before {
+  border-width: 0 0 10px 10px;
+  top: -10px;
+  left: 0;
+}
+
+.button .inner::after {
+  border-width: 10px 10px 0 0;
+  bottom: -10px;
+  right: 0;
+}
