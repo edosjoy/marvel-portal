@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/marvel-portal/static/css/main.edbd18f4.css",
-    "main.js": "/marvel-portal/static/js/main.719d38d3.js",
+    "main.js": "/marvel-portal/static/js/main.6f8a6f49.js",
     "static/media/page-decor.png": "/marvel-portal/static/media/page-decor.7d2b8934160072a4348f.png",
     "static/media/roboto-condensed-v25-latin-regular.svg": "/marvel-portal/static/media/roboto-condensed-v25-latin-regular.8bbcf46feb162b768a15.svg",
     "static/media/roboto-condensed-v25-latin-700.svg": "/marvel-portal/static/media/roboto-condensed-v25-latin-700.7d286143e6606e65ec9d.svg",
@@ -21,10 +21,10 @@
     "static/media/heart-white.svg": "/marvel-portal/static/media/heart-white.fd1c86900a8cc75ba9bd.svg",
     "index.html": "/marvel-portal/index.html",
     "main.edbd18f4.css.map": "/marvel-portal/static/css/main.edbd18f4.css.map",
-    "main.719d38d3.js.map": "/marvel-portal/static/js/main.719d38d3.js.map"
+    "main.6f8a6f49.js.map": "/marvel-portal/static/js/main.6f8a6f49.js.map"
   },
   "entrypoints": [
     "static/css/main.edbd18f4.css",
-    "static/js/main.719d38d3.js"
+    "static/js/main.6f8a6f49.js"
   ]
 }
