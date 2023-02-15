@@ -1,0 +1,9 @@
+.characters {
+  padding: 0 0 45px 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 59% 39%;
+    grid-column-gap: 25px;
+  }
+}

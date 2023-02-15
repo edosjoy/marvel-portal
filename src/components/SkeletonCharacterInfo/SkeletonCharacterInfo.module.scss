@@ -1,0 +1,68 @@
+.character-skeleton {
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  align-self: start;
+  padding: 25px;
+  position: sticky;
+  top: 10px;
+  max-height: 97.5vh;
+  overflow: auto;
+
+  &__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+
+  &__header {
+    display: flex;
+    gap: 0 16px;
+    align-items: center;
+    margin: 0 0 15px 0;
+  }
+
+  &__circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &__small-line {
+    width: 326px;
+    height: 16px;
+  }
+
+  &__big-line {
+    width: 100%;
+    height: 35px;
+    margin: 0 0 15px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__pulse {
+    background: #C4C4C4;
+    animation: pulse 1.5s ease-in-out 0.5s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

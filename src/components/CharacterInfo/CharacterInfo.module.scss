@@ -1,0 +1,79 @@
+.character-info {
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  align-self: start;
+  padding: 25px;
+  position: sticky;
+  top: 10px;
+  max-height: 97.5vh;
+  overflow: auto;
+
+  &__header {
+    display: flex;
+    gap: 0 25px;
+    margin: 0 0 15px 0;
+  }
+
+  &__image {
+    width: 150px;
+    height: 150px;
+  }
+
+  &__heading-and-buttons {
+    position: relative;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  &__btn-home-page {
+    position: absolute;
+    bottom: 56px;
+  }
+
+  &__btn-wiki {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin: 0 0 10px 0;
+  }
+
+  &__comics-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0 0 13px 0;
+  }
+
+  &__comics-item {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 0 10px 0;
+    padding: 4px 10px;
+    text-decoration: none;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

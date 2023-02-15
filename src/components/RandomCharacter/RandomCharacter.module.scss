@@ -1,48 +1,47 @@
 .random-character {
+  margin: 0 0 50px 0;
 
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 1080px) {
+      display: block;
+    }
+  }
+
+  &__info {
+    padding: 35px 40px;
+    display: flex;
+    gap: 0 30px;
+    min-height: 250px;
+  }
+
+  &__try-it {
+  }
 }
 
-.random-character__wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.random-character__info {
+.try-random-character {
   padding: 35px 40px;
-  display: flex;
-  gap: 0 30px;
-}
-
-.random-character__description {
   position: relative;
-}
+  background: #232222 url("./images/decoration.png") no-repeat right -10% bottom 10%;
+  min-height: 250px;
 
-.random-character__image {
-  /*max-width: 180px;*/
-  /*max-height: 180px;*/
-}
+  &__description {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
 
-.random-character__heading {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  text-transform: uppercase;
-  margin: 0 0 13px 0;
-}
+    &:first-child {
+      margin: 0 0 33px 0;
+    }
+  }
 
-.random-character__text {
-
-}
-
-.random-character__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 30px;
-  position: absolute;
-  bottom: 10px;
-}
-
-.random-character__try {
-  height: 100px;
-  background: green;
+  &__button {
+    position: absolute;
+    bottom: 45px;
+    cursor: pointer;
+  }
 }

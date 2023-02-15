@@ -23,12 +23,14 @@
 */
 
 .button {
+  display: block;
   position: relative;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   transition: all 0.2s ease;
+  border: none;
 }
 
 .button:hover {
@@ -54,9 +56,18 @@
 .button::before,
 .button::after {
   content: "";
-  width: 91px;
   height: 10px;
   position: absolute;
+}
+
+.button_long::before,
+.button_long::after {
+  width: 160px;
+}
+
+.button_short::before,
+.button_short::after {
+  width: 91px;
 }
 
 .button_red::before,

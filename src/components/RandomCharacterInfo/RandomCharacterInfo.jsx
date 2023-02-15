@@ -3,15 +3,7 @@ import {Link} from "react-router-dom";
 import styles from './RandomCharacterInfo.module.scss';
 import cn from "classnames";
 
-interface Props {
-	id: number,
-	image: string,
-	name: string,
-	description: string,
-	wikiLink: string
-}
-
-const RandomCharacterInfo = ({randomCharacter}: Props) => {
+const RandomCharacterInfo = ({randomCharacter}) => {
 	const {id, image, name, description, wikiLink} = randomCharacter;
 
 	return (

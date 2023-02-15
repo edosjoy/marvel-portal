@@ -1,0 +1,25 @@
+.character-list-item {
+  position: relative;
+  background: #232222;
+  height: 318px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 20px #9F0013;
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 200px;
+    height: 200px;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #ffffff;
+    padding: 15px 15px 0 15px;
+  }
+}

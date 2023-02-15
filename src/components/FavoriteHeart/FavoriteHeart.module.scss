@@ -1,0 +1,17 @@
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+
+  &_white {
+    background: url("./heart-white.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  &_red {
+    background: url("./heart-red.svg") no-repeat center center;
+    background-size: contain;
+  }
+}

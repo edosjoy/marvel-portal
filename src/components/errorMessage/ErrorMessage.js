@@ -4,8 +4,8 @@ const ErrorMessage = () => {
   return (
     <img src={errorImageGif} alt="Error" style={{
       display: 'block',
-      width: '250px',
-      height: '250px',
+      width: '200px',
+      height: '200px',
       objectFit: 'contain',
       margin: '0 auto',
     }} />
